@@ -16,7 +16,7 @@ export class FavoriteComponent implements OnInit {
 
   onClick(){
     this.isSelected = !this.isSelected
-    this.click.emit()
+    this.click.emit({newValue: this.isSelected})
   }
 
 }
